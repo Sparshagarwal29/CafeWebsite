@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="flex flex-col leading-tight cursor-pointer" onClick={() => scrollToSection('home')}>
           <h1 className="flex items-center gap-2 text-2xl font-bold text-[#2C1810] tracking-wide">
             <img src={logo} alt="Logo" className="w-8 h-8 rounded-full object-cover" />
-            Flaoured
+            Flavored 
           </h1>
           <p className="text-[11px] text-[#6F4E37] opacity-80 tracking-widest uppercase ml-10">
             Wake up to delicious
