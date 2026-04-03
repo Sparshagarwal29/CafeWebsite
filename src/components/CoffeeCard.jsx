@@ -4,12 +4,12 @@ const Card = ({ item }) => {
   const [liked, setLiked] = useState(false);
 
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden w-[210px] flex-shrink-0">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden w-[250px] flex-shrink-0">
       <div className="relative">
         <img
           src={item.image}
           alt={item.name}
-          className="w-full h-48 object-cover"
+          className="w-full h-50 object-cover"
         />
         <button
           onClick={() => setLiked(!liked)}
@@ -20,7 +20,7 @@ const Card = ({ item }) => {
           </span>
         </button>
       </div>
-      <div className="p-3">
+      <div className="p-4">
         <h3 className="font-bold text-[#2C1810] text-sm">{item.name}</h3>
         <p className="text-xs text-gray-500 mt-1 leading-relaxed line-clamp-2">{item.description}</p>
         <div className="flex items-center justify-between mt-3">
@@ -35,7 +35,7 @@ const Section = ({ title, items }) => {
 
   const scroll = (dir) => {
     const el = document.getElementById(title);
-    if (el) el.scrollLeft += dir === 'left' ? -240 : 240;
+    if (el) el.scrollLeft += dir === 'left' ? -250 : 240;
   };
 
   return (
